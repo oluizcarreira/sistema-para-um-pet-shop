@@ -54,29 +54,42 @@ Por se tratar de um projeto com foco em banco de dados NoSQL (Documentos), a apl
 ├── LICENSE
 ├── app.py              # Código principal e gerenciamento das rotas
 └── requirements.txt    # Dependências do projeto
-⚙️ Como Executar o Projeto Localmente
-1. Clonar o repositório
-Bash
-git clone [https://github.com/seu-usuario/sistema-para-um-pet-shop.git](https://github.com/seu-usuario/sistema-para-um-pet-shop.git)
+```
+
+---
+
+## ⚙️ Como Executar o Projeto Localmente
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/seu-usuario/sistema-para-um-pet-shop.git
 cd sistema-para-um-pet-shop
-2. Configurar o Ambiente Virtual (Opcional, mas recomendado)
-Bash
+```
+
+### 2. Configurar o Ambiente Virtual (Opcional, mas recomendado)
+```bash
 python -m venv venv
 source venv/bin/activate  # No Linux/Mac
 # venv\Scripts\activate   # No Windows
-3. Instalar as dependências
-Bash
-pip install -r requirements.txt
-4. Configurar as Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto com as seguintes chaves preenchidas:
+```
 
-Snippet de código
+### 3. Instalar as dependências
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configurar as Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto com as seguintes chaves preenchidas:
+```env
 SECRET_KEY="sua_chave_secreta_flask"
 DATABASE_URL="sua_string_de_conexao_mongodb"
 DB="nome_do_seu_banco_de_dados"
 COLPET="nome_da_sua_collection_de_pets"
 COLUSR="nome_da_sua_collection_de_usuarios"
-5. Executar a aplicação
-Bash
+```
+
+### 5. Executar a aplicação
+```bash
 python app.py
-Acesse http://127.0.0.1:5000/ no seu navegador.
+```
+Acesse `http://127.0.0.1:5000/` no seu navegador.
